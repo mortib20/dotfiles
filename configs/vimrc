@@ -1,0 +1,39 @@
+" Einrückung
+set autoindent
+set shiftwidth=2
+set smarttab
+set tabstop=2
+
+" Farbschema
+colorscheme ron 
+
+" Suche
+set hlsearch
+set ignorecase
+set smartcase
+
+" Leistung
+set lazyredraw
+
+" Text
+set display+=lastline
+set encoding=utf-8
+set linebreak
+set scrolloff=1
+set wrap
+filetype plugin on
+filetype indent on
+syntax enable
+
+" Interface
+set laststatus=2
+set ruler
+set wildmenu
+set mouse=a
+set noerrorbells
+set number
+set completeopt=longest,menuone
+set smartindent
+set cindent
+
+set pastetoggle=<F2>

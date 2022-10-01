@@ -1,0 +1,7 @@
+[user]
+	email = mortib20@gmail.com
+	name = mortib20
+[core]
+	quotepath = false
+[init]
+	defaultBranch = main
