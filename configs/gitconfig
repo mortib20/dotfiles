@@ -1,7 +1,10 @@
 [user]
 	email = mortib20@gmail.com
-	name = mortib20
+	name = Martin Paul
 [core]
 	quotepath = false
+	autocrlf = true
 [init]
 	defaultBranch = main
+[color]
+	ui = true

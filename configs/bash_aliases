@@ -1,0 +1,15 @@
+alias la='ls -alht'
+
+alias sstart='sudo systemctl start'
+alias sstop='sudo systemctl stop'
+alias senable='sudo systemctl enable'
+alias sdisable='sudo systemctl disable'
+alias sstatus='sudo systemctl status'
+
+alias ..='cd ..'
+alias rm='rm -Iv'
+alias mem='df -h && free -h'
+
+alias mkdir='mkdir -v'
+alias cp='cp -v'
+alias mv='mv -v'
