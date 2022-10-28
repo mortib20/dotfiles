@@ -1,4 +1,4 @@
-alias la='ls -alht'
+alias la='ls -halt'
 
 alias sstart='sudo systemctl start'
 alias sstop='sudo systemctl stop'

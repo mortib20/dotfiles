@@ -3,7 +3,6 @@
 	name = Martin Paul
 [core]
 	quotepath = false
-	autocrlf = true
 [init]
 	defaultBranch = main
 [color]
