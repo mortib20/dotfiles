@@ -5,7 +5,7 @@ set smarttab
 set tabstop=2
 
 " Farbschema
-colorscheme ron 
+"colorscheme ron 
 
 " Suche
 set hlsearch

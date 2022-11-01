@@ -1,6 +1,7 @@
 #!/bin/bash
 task=$1
 packages=(spotify)
+folder=~/AUR
 
 function print_usage {
 	echo "Usage: $0 download | build | install | update | clean"
@@ -16,7 +17,9 @@ function task_download {
 			echo "$pack already cloned - skipping"
 		else
 			echo "Cloning $pack"
+			cd $folder
 			git clone https://aur.archlinux.org/$pack.git
+			cd ~
 		fi
 	done
 }
@@ -26,9 +29,9 @@ function task_build {
 	for pack in ${packages[@]}
 	do
 		echo "Building $pack"
-		cd $pack
+		cd $folder/$pack
 		makepkg -s -c -r
-		cd ..
+		cd ~
 	done
 }
 
@@ -37,9 +40,9 @@ function task_install {
 	for pack in ${packages[@]}
 	do
 		echo "Installing $pack"
-		cd $pack
+		cd $folder/$pack
 		makepkg -i
-		cd ..
+		cd ~
 	done
 }
 
@@ -48,8 +51,9 @@ function task_update {
 	for pack in ${packages[@]}
 	do
 		echo "Updating $pack"
-		cd $pack
+		cd $folder/$pack
 		git pull
+		cd ~
 	done
 }
 
@@ -58,8 +62,9 @@ function task_clean {
 	for pack in ${packages[@]}
 	do
 		echo "Cleaning $pack"
-		cd $pack
+		cd $folder/$pack
 		git clean -dfX
+		cd ~
 	done
 }
 
